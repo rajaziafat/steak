@@ -1,0 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    width: 100%;
+    overflow-x: hidden;
+}
+.clipy{
+    height:auto;
+    width:65%;
+    clip-path: polygon(0 0, 100% 0%, 96% 100%, 4% 100%);
+}
+.path{
+    clip-path: polygon(65% 0, 100% 0, 100% 100%, 30% 100%);
+}
+.btn:hover{
+    background: #ada2a2 !important; 
+}
+
+@media only screen and (max-width: 1075px) {
+    .clipy{
+        width: 75%;
+    }
+  }
+@media only screen and (max-width: 1010px) {
+    .clipy{
+        width: 80%;
+    }
+  }
+@media only screen and (max-width: 950px) {
+    .clipy{
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .notification-div{
+        padding: 10px 0px;
+    }
+    .path{
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+        margin-left: 20px;
+        padding: 0px;
+        background: transparent;
+        width:15px;
+        margin-right: 5px;
+    }
+  }
+  @media only screen and (max-width: 710px) {
+    .notification-div{
+        display: block;
+    }
+  }
